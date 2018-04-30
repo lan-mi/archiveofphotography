@@ -6,10 +6,30 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif; }
 
+.archive {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 65px;
+  z-index: 1;
+  padding: 10px; }
+  .archive a {
+    text-decoration: none;
+    color: #fff; }
+
+.archive-index {
+  position: absolute;
+  left: 80px; }
+  .archive-index a {
+    text-decoration: none;
+    color: #000; }
+
 nav {
+  background: rgba(0, 0, 0, 0.5);
   width: 200px;
   line-height: 90%;
-  margin: 50px; }
+  position: absolute;
+  top: 80px;
+  left: 65px; }
 
 nav li a {
   color: #fff !important; }
@@ -24,3 +44,73 @@ nav li a:focus {
 
 .link2 {
   margin-left: 10px; }
+
+.main-nav {
+  margin-top: -15px;
+  background-color: rgba(0, 0, 0, 0); }
+
+.main-nav li a {
+  color: #000 !important; }
+
+#link {
+  line-height: 100%; }
+
+.container {
+  margin-top: 50px; }
+
+.navigation {
+  position: absolute;
+  top: 150px;
+  width: 800px;
+  height: 400px;
+  right: 0; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px; }
+
+.images {
+  width: 600px;
+  position: relative; }
+
+.image img {
+  float: left; }
+
+.number {
+  position: absolute;
+  top: -25px; }
+
+.prev {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  left: 0; }
+
+.next {
+  float: left;
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0; }
+
+.prev p,
+.next p {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 30px; }
+
+#first {
+  top: 150px; }
+
+#first p {
+  margin-left: 25px; }
+
+#first h3 {
+  margin-left: 25px; }
