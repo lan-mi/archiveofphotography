@@ -64,26 +64,21 @@ nav li a:focus {
 #link {
   line-height: 100%; }
 
+/* Slider */
 .container {
-  margin-top: 50px; }
+  margin-top: 150px; }
 
 .navigation {
-  position: absolute;
-  top: 150px;
-  width: 800px;
-  height: 400px;
-  right: 0; }
+  width: 700px;
+  height: 500px; }
 
 .wrapper {
   margin: 0 auto;
-  width: 600px; }
+  width: 600px;
+    width-height: 500px; }
 
 .images {
-  width: 600px;
-  position: relative; }
-
-.image img {
-  float: left; }
+  position: absolute; }
 
 .number {
   position: absolute;
@@ -104,16 +99,14 @@ nav li a:focus {
   right: 25px;
   top: 0; }
 
-.prev p,
-.next p {
-  font-size: 30px;
-  color: #000;
+/* next, prev button on slider */
+.next img,
+.prev img {
   text-align: center;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
-  padding: 30px; }
+  cursor: pointer; }
 
 #first {
   top: 150px; }
@@ -123,3 +116,9 @@ nav li a:focus {
 
 #first h3 {
   margin-left: 25px; }
+
+.open {
+  display: none; }
+
+.closed {
+  display: block; }
