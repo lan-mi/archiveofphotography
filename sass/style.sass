@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 
-.landing-img
-    position: fixed
-    margin-top: -50px
+/* General ====================================== */
 
 body
     font-family: 'IBM Plex Sans', sans-serif;
+    
+/* Index page ============================ */
+
+.landing-img
+    position: fixed
+    margin-top: -50px
     
 .archive
     background: rgba(0, 0, 0, 0.5)
@@ -20,20 +24,11 @@ body
         left: 15px
         position: relative
         
-    
-.archive-index
-    position: absolute
-    left: 80px
-    
-    a
-        text-decoration: none
-        color: #000
-
 nav
     background: rgba(0, 0, 0, 0.5)
     width: 200px
     line-height: 90%
-    position: absolute
+    position: relative
     top: 57px
     left: 65px
     
@@ -53,9 +48,20 @@ nav li a:focus
 
 .link2
     margin-left: 10px
+        
+/* Other pages */        
     
+.archive-index
+    position: absolute
+    left: 70px
+    
+    a
+        text-decoration: none
+        color: #000
+ 
 .main-nav
     background-color: rgba(0, 0, 0, 0.0)
+    left: 40px
     
 .main-nav li a
     color: #000 !important
@@ -75,63 +81,103 @@ nav li a:focus
     margin-top: 150px
 
 .navigation
-	width: 700px
 	height: 500px
+    position: relative
 
-.wrapper
-	margin: 0 auto
-	width: 600px
-    height: 500px
-
+.image img
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 600px
+    
 .images
-	position: absolute
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 600px
 
 .number
     position: absolute
-    top: -25px
-
+    top: -20px
+    
 .prev
 	position: absolute
 	height: 100%
-	width: 50px
+	width: 10%
 	top: 0
 	left: 0
 
 .next
 	float: left
 	height: 100%
-	width: 50px
+	width: 10%
 	position: absolute
-	right: 25px
+	right: 0
 	top: 0
 
 /* next, prev button on slider */  
-.next img,
-.prev img
+
+%button
     text-align: center
     position: relative
     top: 50%
     transform: translateY(-50%)
-    cursor: pointer
+    cursor: pointer    
+
+.next img
+    @extend %button
+    
+.prev img
+    @extend %button
+    float: right
 	
 #first
-	top: 150px
+	top: 120px
 
 #first p
-    margin-left: 25px
+    margin: 25px
 
 #first h3
-    margin-left: 25px
+    margin: 25px
     
 .open
     display: none
     
 .closed
     display: block
+    
+/* Media Screens ===================================== */
 
+@media screen and (max-width: 1300px)
+    .navigation
+        width: 400px
+        height: 250px
+        margin-top: 250px
+        
+    .images
+        width: 400px
+        
+    .image img
+        width: 400px
+        
+    .next img,
+    .prev img
+        top: 70%
+              
+@media screen and (max-width: 768px)
+    .navigation
+        width: 300px
+        height: 150px
+        
+    .images
+        width: 200px
+        
+    .image img
+        width: 200px
 
-
-
+    .next img,
+    .prev img
+        top: 45%
 
 
 
