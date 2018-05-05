@@ -25,7 +25,7 @@ nav {
   width: 200px;
   line-height: 90%;
   position: relative;
-  top: 57px;
+  top: 56px;
   left: 65px; }
 
 nav li a {
@@ -70,10 +70,12 @@ nav li a:focus {
 
 /* Slider */
 .container {
-  margin-top: 150px; }
+  margin-top: 150px;
+  width: 700px; }
 
 .navigation {
   height: 500px;
+    height-width: 700px;
     height-position: relative; }
 
 .image img {
@@ -112,6 +114,8 @@ nav li a:focus {
   text-align: center;
   position: relative;
   top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer; }
 
@@ -134,6 +138,15 @@ nav li a:focus {
   display: block; }
 
 /* Media Screens ===================================== */
+@media screen and (min-width: 1925px) {
+  .landing-img img {
+    width: 100vw;
+    height: 100vh; } }
+
+@media screen and (max-width: 1370px) and (min-width: 1300px) {
+  .landing-img img {
+    width: 1370px; } }
+
 @media screen and (max-width: 1300px) {
   .navigation {
     width: 400px;
