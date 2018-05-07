@@ -8,42 +8,39 @@ body
 /* Index page ============================ */
 
 .landing-img
-    position: fixed
-    margin-top: -50px
+    position: absolute
+    right: 25px
+    top: 15vh
     
 .archive
-    background: rgba(0, 0, 0, 0.5)
     position: absolute
-    left: 65px
+    left: 55px
     z-index: 1
     width: 200px
-    
-    a
-        text-decoration: none
-        color: #fff
-        left: 15px
-        position: relative
         
 nav
-    background: rgba(0, 0, 0, 0.5)
     width: 200px
     line-height: 90%
     position: relative
-    top: 56px
-    left: 65px
+    top: 100px
+    left: 55px
     
-
 nav li a
-    color: #fff !important
+    color: #000 !important
     
 nav li a:hover
     background-color: transparent !important
-    color: #fff !important
+    color: #000 !important
     font-weight: 600
     
 nav li a:focus
     background-color: transparent !important
-    color: #fff !important
+    color: #000 !important
+    font-weight: 600
+    
+nav li a:active
+    background-color: transparent !important
+    color: #000 !important
     font-weight: 600
 
 .link2
@@ -60,8 +57,8 @@ nav li a:focus
         color: #000
  
 .main-nav
-    background-color: rgba(0, 0, 0, 0.0)
     left: 40px
+    z-index: 5
     
 .main-nav li a
     color: #000 !important
@@ -119,6 +116,9 @@ nav li a:focus
 	right: 0
 	top: 0
 
+#video-img
+    top: 25%
+
 /* next, prev button on slider */  
 
 %button
@@ -140,10 +140,11 @@ nav li a:focus
 /* Column with text */
 	
 #first
-	top: 60px
+	top: 55px
 
 #first p
     margin: 25px
+    text-align: justify
 
 #first h3
     margin: 25px
@@ -154,27 +155,36 @@ nav li a:focus
 .closed
     display: block
     
+/* About us page and Support page */
+
+.bio
+    margin-top: 20%
+    margin-left: 30%
+    text-align: justify
+    
+/* Contact page */
+
+.contact
+    margin-top: 20%
+    margin-left: 25%
+
+.contact a
+    font-size: 17px
+    text-decoration: none
+    
 /* Media Screens ===================================== */
 
-@media screen and (min-width: 1925px)
-    .landing-img
-        margin-top: 50px
-        position: absolute
-    
-    .landing-img img
-        width: 100vw
-        height: 100vh
-
-@media screen and (max-width: 1370px) and (min-width: 1301px)
-    .landing-img img
-        margin-top: 50px
-        position: absolute
-    
-    .landing-img img
-        width: 100vw
-        height: 100vh
+@media screen and (min-width: 1900px)
+    .container
+        margin-top: 300px
+        
+    #first
+        top: 300px
 
 @media screen and (max-width: 1300px)
+    nav
+        background: rgba(250, 250, 250, 0.5)
+        
     .navigation
         width: 400px
         height: 250px
@@ -189,8 +199,14 @@ nav li a:focus
     .next img,
     .prev img
         top: 70%
+        
+    #first
+        top: 150px
               
 @media screen and (max-width: 768px)
+    nav
+        background: rgba(250, 250, 250, 0.5)
+    
     .navigation
         width: 300px
         height: 150px
@@ -204,7 +220,14 @@ nav li a:focus
     .next img,
     .prev img
         top: 45%
-
+        
+    .bio
+        margin-top: 150px
+        margin-left: 0
+        
+    .contact
+        margin-top: 150px
+        margin-left: 0
 
 
 
