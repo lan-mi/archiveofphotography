@@ -50,15 +50,10 @@ nav li a:active {
   font-weight: 600;
   margin-left: 10px; }
 
-/* Other pages =============================== */
-/* Main logo */
-.archive-index {
-  position: absolute;
-  left: 70px; }
-  .archive-index a {
-    text-decoration: none;
-    color: #000; }
+.active-main {
+  font-weight: 600; }
 
+/* Other pages =============================== */
 /* Navigation */
 .main-nav {
   left: 40px;
@@ -103,6 +98,10 @@ nav li a:active {
 .number {
   margin-top: -20px; }
 
+#no {
+  margin-top: -50px;
+  margin-left: 10px; }
+
 .prev {
   position: absolute;
   height: 100%;
@@ -117,6 +116,9 @@ nav li a:active {
   position: absolute;
   right: 0;
   top: 0; }
+
+#ver-img {
+  top: -30px; }
 
 /* Video program page - second image */
 #video-img {
@@ -161,7 +163,8 @@ nav li a:active {
 /* Contact page */
 .contact {
   margin-top: 20%;
-  margin-left: 25%; }
+  margin-left: 25%;
+  margin-bottom: 200px; }
 
 .contact a {
   font-size: 17px;
@@ -172,7 +175,9 @@ nav li a:active {
   .container {
     margin-top: 300px; }
   #first {
-    top: 300px; } }
+    top: 300px; }
+  #video-img {
+    top: 0; } }
 
 @media screen and (max-width: 1300px) {
   .landing-img img {
